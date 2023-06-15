@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+
+<script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous">
+</script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" 
+  integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" 
+  crossorigin="anonymous">
+</script>
+
+<script src="studentrego.js"></script>
+
+<body>
+  
+    <div class="col-md-4"></div>
+  
+    <div class="col-md-4">
+    <div class="container">
+      <h1>Students Records</h1>
+
+        <a href="createStudent.html"><button id="addContacts">Add a new Student</button></a>
+        <button id="getcontacts">Get the Student's Details</button>
+          <!-- <div class="jumbotron"> -->
+            <h2>All Contacts</h2>
+            <div id="allContacts">
+
+            </div>
+          <!-- </div> -->
+    </div>
+    </div>
+  
+    <div class="col-md-4"></div>
+  
+  </body>
+</html>
+
+
+<!-- Ajax (which stands for Asynchronous JavaScript And XML) is a combination of technologies 
+Clients (usually JavaScript code running in a web browser) use Ajax to exchange data with web services. 
+This approach is used extensively in modern web applications to help give them the feel of a desktop application. 
+This smoother desktop feel is possible because the HTML page does not reload when making an Ajax call. 
+The Ajax call is made, data is returned from the web service, and then JavaScript code dynamically updates only 
+the portions of the page that need to be updated. -->
+<!-- XHR is an application programming interface, or API, that allows JavaScript code to exchange data with 
+web services by exchanging requests and responses over HTTP or HTTPS. Although we could make these calls 
+directly in our JavaScript code, there are several libraries available, including jQuery, that wrap XHR 
+with code that makes it more convenient to make Ajax calls. -->
+<!-- CORS
+By default, all browsers enforce the same origin policy. This policy enforces the rule that JavaScript code 
+running in the browser is only allowed to make calls back to the domain of its page. For example, 
+JavaScript code running in a page from >www.example.com can only make calls back to www.example.com. 
+The browser would prevent calls back to www.anotherdomain.com or any other domain for that matter.
+There are some situations where we don't want the browser to follow this policy. One example is if your HTML 
+pages are served up from www.example.com but your client code makes calls back to web services on another 
+subdomain like services.example.com
+we can use Cross-Origin Resource Sharing (CORS). CORS allows some resource sharing across domains – 
+it is not a free for all but allows the HEAD, GET, and POST HTTP methods -->
+
+<!--
+The integrity and crossorigin attributes are used for Subresource Integrity (SRI) checking. 
+This allows browsers to ensure that resources hosted on third-party servers have not been 
+tampered with. Use of SRI is recommended as a best-practice, whenever libraries are loaded 
+from a third-party source.
+-->
